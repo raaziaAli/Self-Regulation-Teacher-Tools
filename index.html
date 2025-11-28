@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Growing Tomorrow's Citizens – Classroom Competencies Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --border-soft: #e5e7eb;
+      --accent: #1d4ed8;
+      --accent-soft: #e0e7ff;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #e5edff 0, #f9fafb 45%, #f3f4f6 100%);
+      color: var(--text-main);
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 16px 40px;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      margin: 0 0 6px;
+      color: #111827;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      max-width: 720px;
+    }
+
+    .tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    h2.section-title {
+      font-size: 1.3rem;
+      margin: 24px 0 6px;
+      color: #111827;
+    }
+
+    .section-subtitle {
+      margin: 0 0 14px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      max-width: 720px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px 14px 12px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      color: #111827;
+    }
+
+    .card p {
+      margin: 0 0 8px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .competency-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .competency-list li {
+      display: flex;
+      gap: 10px;
+      padding: 6px 0;
+      border-bottom: 1px solid #eef0f5;
+      font-size: 0.9rem;
+    }
+
+    .competency-list li:last-child {
+      border-bottom: none;
+    }
+
+    .comp-number {
+      font-weight: 600;
+      color: var(--accent);
+      min-width: 20px;
+    }
+
+    .comp-text-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #111827;
+    }
+
+    .comp-text-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 4px 0 8px;
+    }
+
+    .pill {
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid #bfdbfe;
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: var(--accent);
+      background: #eff6ff;
+      margin-top: 4px;
+    }
+
+    .card a:hover {
+      background: #dbeafe;
+      border-color: #60a5fa;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        padding: 22px 12px 30px;
+      }
+      .two-column {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="tagline">Growing Tomorrow's Citizens in Today's Classrooms</div>
+      <h1>Critical Competencies and Classroom Assessment Tools</h1>
+      <p>
+        This page highlights seven critical competencies for future-ready learners and
+        provides three practical classroom tools you can use to gather evidence of students'
+        growth in these areas.
+      </p>
+    </header>
+
+    <!-- Seven Critical Competencies -->
+    <section>
+      <h2 class="section-title">Seven Critical Competencies</h2>
+      <p class="section-subtitle">
+        The framework below summarizes seven key competencies that support students in becoming
+        thoughtful, responsible, and engaged citizens. You can adjust the titles and descriptions
+        to match the exact language used in the book.
+      </p>
+
+      <div class="two-column">
+        <div class="card">
+          <ul class="competency-list">
+            <li>
+              <div class="comp-number">1.</div>
+              <div>
+                <div class="comp-text-title">Self-Awareness and Identity</div>
+                <div class="comp-text-desc">
+                  Understanding personal strengths, values, and areas for growth; recognizing how one’s background and experiences shape perspectives.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">2.</div>
+              <div>
+                <div class="comp-text-title">Empathy and Perspective-Taking</div>
+                <div class="comp-text-desc">
+                  Listening to and considering the feelings, needs, and points of view of others; learning to see issues from multiple angles.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">3.</div>
+              <div>
+                <div class="comp-text-title">Critical and Creative Thinking</div>
+                <div class="comp-text-desc">
+                  Asking meaningful questions, analyzing information, and generating imaginative solutions to complex problems.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">4.</div>
+              <div>
+                <div class="comp-text-title">Collaboration and Community</div>
+                <div class="comp-text-desc">
+                  Working productively with others, contributing to group goals, and building a sense of shared responsibility in the classroom.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">5.</div>
+              <div>
+                <div class="comp-text-title">Communication and Dialogue</div>
+                <div class="comp-text-desc">
+                  Expressing ideas clearly, asking clarifying questions, and engaging in respectful discussion and disagreement.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">6.</div>
+              <div>
+                <div class="comp-text-title">Ethical Decision-Making</div>
+                <div class="comp-text-desc">
+                  Considering the impact of choices on self, others, and the wider community; acting with integrity and fairness.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="comp-number">7.</div>
+              <div>
+                <div class="comp-text-title">Agency and Civic Engagement</div>
+                <div class="comp-text-desc">
+                  Seeing oneself as capable of taking informed action, contributing to change, and participating in local and global communities.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>How to Use This Page</h3>
+          <p>
+            Use the tools below as quick, low-prep ways to gather evidence of how students are
+            developing these competencies in your classroom. Each activity can be used:
+          </p>
+          <ul style="padding-left:18px; margin:6px 0 10px; font-size:0.86rem; color:#4b5563;">
+            <li>as a warm-up or reflection task,</li>
+            <li>as part of advisory or homeroom, or</li>
+            <li>as formative assessment alongside academic units.</li>
+          </ul>
+          <p>
+            You might invite students to revisit these tools over time and discuss how their
+            responses change as they grow as learners and citizens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classroom Assessment Strategies -->
+    <section>
+      <h2 class="section-title">Classroom Assessment Strategies</h2>
+      <p class="section-subtitle">
+        These three interactive tools provide different windows into students' dispositions,
+        habits, and hopes. Each connects naturally to multiple competencies in the framework above.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>DNA Inventory</h3>
+          <p>
+            A self-reflection inventory that invites students to identify their "learning DNA":
+            personal strengths, working styles, and core values as learners and classmates.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Self-awareness</span>
+            <span class="pill">Identity</span>
+            <span class="pill">Student voice</span>
+          </div>
+          <p>
+            Use at the start of the year or term to get to know students and to make their
+            strengths and needs visible. Revisit later to discuss growth and shifting identities.
+          </p>
+          <a href="DNA-Inventory.html">Open DNA Inventory</a>
+        </article>
+
+        <article class="card">
+          <h3>Effort Tracker</h3>
+          <p>
+            A simple tool for students to monitor their effort, focus, and use of strategies
+            over time, rather than only tracking grades or outcomes.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Agency</span>
+            <span class="pill">Metacognition</span>
+            <span class="pill">Growth mindset</span>
+          </div>
+          <p>
+            Use weekly or after key tasks. Encourage students to notice patterns, set small goals,
+            and connect effort to progress in both academic work and citizenship competencies.
+          </p>
+          <a href="Effort-Tracker.html">Open Effort Tracker</a>
+        </article>
+
+        <article class="card">
+          <h3>Hope Survey</h3>
+          <p>
+            A short survey that surfaces students' sense of hope, belonging, and purpose in school,
+            and how they see their future selves as learners and citizens.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Belonging</span>
+            <span class="pill">Well-being</span>
+            <span class="pill">Future orientation</span>
+          </div>
+          <p>
+            Use at key points in the year to open conversation about classroom climate, support
+            systems, and how school experiences connect to students' goals and dreams.
+          </p>
+          <a href="Hope-Survey.html">Open Hope Survey</a>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <span>Growing Tomorrow's Citizens in Today's Classrooms – Competency Toolkit</span>
+      <span>Index page served via GitHub Pages</span>
+    </footer>
+  </div>
+</body>
+</html>
